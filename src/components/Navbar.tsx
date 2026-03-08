@@ -33,7 +33,7 @@ export default function Navbar() {
             T
             <div className="absolute inset-0 bg-white/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity" />
           </div>
-          <span className={`font-display font-bold text-2xl tracking-tight ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
+          <span className={`font-display font-bold text-2xl tracking-tight ${isScrolled ? 'text-blue-900' : 'text-white'}`}>
             Turbo<span className="text-blue-500">Cooling</span>
           </span>
         </a>
@@ -44,7 +44,7 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className={`text-sm font-medium transition-colors hover:text-emerald-500 ${isScrolled ? 'text-slate-600' : 'text-slate-200'
+              className={`text-sm font-medium transition-colors hover:text-orange-500 ${isScrolled ? 'text-blue-600' : 'text-blue-200'
                 }`}
             >
               {link.name}
@@ -56,16 +56,16 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-6">
           <a
             href="tel:+14805032800"
-            className={`flex items-center gap-2 font-semibold transition-colors ${isScrolled ? 'text-slate-900' : 'text-white'
+            className={`flex items-center gap-2 font-semibold transition-colors ${isScrolled ? 'text-blue-900' : 'text-white'
               }`}
           >
-            <Phone className="w-4 h-4 text-emerald-500" />
+            <Phone className="w-4 h-4 text-orange-500" />
             <span>(480) 503-2800</span>
           </a>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-2.5 rounded-full font-semibold shadow-lg shadow-emerald-500/30 transition-all"
+            className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold shadow-lg shadow-orange-500/30 transition-all"
           >
             Schedule Now
           </motion.button>
@@ -73,10 +73,10 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2 text-slate-400 hover:text-white transition-colors"
+          className="md:hidden p-2 text-blue-400 hover:text-white transition-colors"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          {isMobileMenuOpen ? <X className={isScrolled ? "text-slate-900" : "text-white"} /> : <Menu className={isScrolled ? "text-slate-900" : "text-white"} />}
+          {isMobileMenuOpen ? <X className={isScrolled ? "text-blue-900" : "text-white"} /> : <Menu className={isScrolled ? "text-blue-900" : "text-white"} />}
         </button>
       </div>
 
@@ -86,24 +86,24 @@ export default function Navbar() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="absolute top-full left-0 right-0 bg-white shadow-xl border-t border-slate-100 p-6 md:hidden flex flex-col gap-4"
+          className="absolute top-full left-0 right-0 bg-white shadow-xl border-t border-blue-100 p-6 md:hidden flex flex-col gap-4"
         >
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-slate-600 font-medium py-2 hover:text-emerald-500"
+              className="text-blue-600 font-medium py-2 hover:text-orange-500"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.name}
             </a>
           ))}
-          <div className="h-px bg-slate-100 my-2" />
-          <a href="tel:+14805032800" className="flex items-center gap-2 font-semibold text-slate-900 py-2">
-            <Phone className="w-4 h-4 text-emerald-500" />
+          <div className="h-px bg-blue-100 my-2" />
+          <a href="tel:+14805032800" className="flex items-center gap-2 font-semibold text-blue-900 py-2">
+            <Phone className="w-4 h-4 text-orange-500" />
             (480) 503-2800
           </a>
-          <button className="w-full bg-emerald-500 text-white py-3 rounded-xl font-semibold shadow-lg shadow-emerald-500/30">
+          <button className="w-full bg-orange-500 text-white py-3 rounded-xl font-semibold shadow-lg shadow-orange-500/30">
             Schedule Now
           </button>
         </motion.div>

@@ -27,16 +27,16 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="reviews" className="py-24 bg-slate-50 overflow-hidden">
+    <section id="reviews" className="py-24 bg-blue-50 overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-1.5 rounded-full text-sm font-bold mb-6">
+          <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-4 py-1.5 rounded-full text-sm font-bold mb-6">
             <Star className="w-4 h-4 fill-current" /> 5-Star Rated Service
           </div>
-          <h2 className="font-display font-bold text-4xl md:text-5xl text-slate-900 mb-6">
+          <h2 className="font-display font-bold text-4xl md:text-5xl text-blue-900 mb-6">
             Don't Just Take Our Word For It
           </h2>
-          <p className="text-lg text-slate-600">
+          <p className="text-lg text-blue-600">
             Join hundreds of satisfied homeowners across the Valley who trust Turbo Cooling & Heating Inc for their comfort.
           </p>
         </div>
@@ -50,9 +50,9 @@ export default function Testimonials() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.2, duration: 0.5 }}
               whileHover={{ y: -10 }}
-              className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 relative group"
+              className="bg-white p-8 rounded-2xl shadow-lg border border-blue-100 relative group"
             >
-              <Quote className="absolute top-8 right-8 text-slate-100 w-12 h-12 group-hover:text-emerald-100 transition-colors" />
+              <Quote className="absolute top-8 right-8 text-blue-100 w-12 h-12 group-hover:text-orange-100 transition-colors" />
 
               <div className="flex items-center gap-1 text-yellow-400 mb-6">
                 {[...Array(5)].map((_, i) => (
@@ -60,7 +60,7 @@ export default function Testimonials() {
                 ))}
               </div>
 
-              <p className="text-slate-700 leading-relaxed mb-8 relative z-10">
+              <p className="text-blue-700 leading-relaxed mb-8 relative z-10">
                 "{testimonial.text}"
               </p>
 
@@ -71,8 +71,8 @@ export default function Testimonials() {
                   className="w-12 h-12 rounded-full object-cover border-2 border-white shadow-md"
                 />
                 <div>
-                  <h4 className="font-bold text-slate-900">{testimonial.name}</h4>
-                  <span className="text-sm text-slate-500">{testimonial.location}</span>
+                  <h4 className="font-bold text-blue-900">{testimonial.name}</h4>
+                  <span className="text-sm text-blue-500">{testimonial.location}</span>
                 </div>
               </div>
             </motion.div>
