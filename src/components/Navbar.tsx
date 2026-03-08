@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'motion/react';
 import { Phone, Menu, X } from 'lucide-react';
 
-export default function Navbar() {
+export default function Navbar({ onOpenSchedule }: { onOpenSchedule: () => void }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { scrollY } = useScroll();
@@ -29,7 +29,7 @@ export default function Navbar() {
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
-          <div className="relative w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300">
+          <div className="relative w-10 h-10 bg-orange-500 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:shadow-orange-500/50 transition-all duration-300">
             T
             <div className="absolute inset-0 bg-white/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity" />
           </div>
@@ -63,6 +63,7 @@ export default function Navbar() {
             <span>(480) 503-2800</span>
           </a>
           <motion.button
+            onClick={onOpenSchedule}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold shadow-lg shadow-orange-500/30 transition-all"
@@ -103,7 +104,7 @@ export default function Navbar() {
             <Phone className="w-4 h-4 text-orange-500" />
             (480) 503-2800
           </a>
-          <button className="w-full bg-orange-500 text-white py-3 rounded-xl font-semibold shadow-lg shadow-orange-500/30">
+          <button onClick={() => { setIsMobileMenuOpen(false); onOpenSchedule(); }} className="w-full bg-orange-500 text-white py-3 rounded-xl font-semibold shadow-lg shadow-orange-500/30">
             Schedule Now
           </button>
         </motion.div>

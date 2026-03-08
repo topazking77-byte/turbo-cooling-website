@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { motion } from 'motion/react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -6,13 +7,17 @@ import Services from './components/Services';
 import WhyChooseUs from './components/WhyChooseUs';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
+import ScheduleModal from './components/ScheduleModal';
 
 export default function App() {
+  const [isScheduleOpen, setIsScheduleOpen] = useState(false);
+  const openSchedule = () => setIsScheduleOpen(true);
+
   return (
     <div className="font-sans antialiased text-blue-900 bg-white selection:bg-orange-200 selection:text-orange-900">
-      <Navbar />
+      <Navbar onOpenSchedule={openSchedule} />
       <main>
-        <Hero />
+        <Hero onOpenSchedule={openSchedule} />
         <Features />
         <WhyChooseUs />
         <Services />
@@ -35,6 +40,7 @@ export default function App() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
               <motion.button
+                onClick={openSchedule}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-white text-orange-600 px-10 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all"
@@ -46,7 +52,7 @@ export default function App() {
                 whileTap={{ scale: 0.95 }}
                 className="bg-transparent border-2 border-white text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-all"
               >
-                Call (480) 232-3647
+                Call (480) 503-2800
               </motion.button>
             </div>
           </div>
@@ -55,6 +61,7 @@ export default function App() {
         <Testimonials />
       </main>
       <Footer />
+      <ScheduleModal isOpen={isScheduleOpen} onClose={() => setIsScheduleOpen(false)} />
     </div>
   );
 }
