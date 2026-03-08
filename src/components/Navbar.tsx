@@ -29,12 +29,12 @@ export default function Navbar() {
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
-          <div className="relative w-10 h-10 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:shadow-emerald-500/50 transition-all duration-300">
-            F
+          <div className="relative w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300">
+            T
             <div className="absolute inset-0 bg-white/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity" />
           </div>
           <span className={`font-display font-bold text-2xl tracking-tight ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
-            Farnsworth<span className="text-emerald-500">HVAC</span>
+            Turbo<span className="text-blue-500">Cooling</span>
           </span>
         </a>
 
@@ -55,12 +55,12 @@ export default function Navbar() {
         {/* CTA & Phone */}
         <div className="hidden md:flex items-center gap-6">
           <a
-            href="tel:+14802323647"
+            href="tel:+14805032800"
             className={`flex items-center gap-2 font-semibold transition-colors ${isScrolled ? 'text-slate-900' : 'text-white'
               }`}
           >
             <Phone className="w-4 h-4 text-emerald-500" />
-            <span>(480) 232-3647</span>
+            <span>(480) 503-2800</span>
           </a>
           <motion.button
             whileHover={{ scale: 1.05 }}
@@ -99,9 +99,9 @@ export default function Navbar() {
             </a>
           ))}
           <div className="h-px bg-slate-100 my-2" />
-          <a href="tel:+14802323647" className="flex items-center gap-2 font-semibold text-slate-900 py-2">
+          <a href="tel:+14805032800" className="flex items-center gap-2 font-semibold text-slate-900 py-2">
             <Phone className="w-4 h-4 text-emerald-500" />
-            (480) 232-3647
+            (480) 503-2800
           </a>
           <button className="w-full bg-emerald-500 text-white py-3 rounded-xl font-semibold shadow-lg shadow-emerald-500/30">
             Schedule Now

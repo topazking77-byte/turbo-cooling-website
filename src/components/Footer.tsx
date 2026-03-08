@@ -8,7 +8,12 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <a href="#" className="flex items-center gap-2 mb-6 group">
-              <img src="/brand-logo.png" alt="Farnsworth Heating Cooling & Plumbing" className="h-12 w-auto object-contain rounded" />
+              <div className="relative w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                T
+              </div>
+              <span className="font-display font-bold text-2xl tracking-tight text-white">
+                Turbo<span className="text-blue-500">Cooling</span>
+              </span>
             </a>
             <p className="text-slate-400 leading-relaxed mb-6">
               Premium HVAC solutions for Arizona homes. We're dedicated to your comfort.
@@ -59,15 +64,15 @@ export default function Footer() {
             <ul className="space-y-6">
               <li className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-emerald-500 shrink-0" />
-                <span>460 S Greenfield Rd Suite #5,<br />Phoenix, AZ 85001</span>
+                <span>1959 S Power Rd #103,<br />Mesa, AZ 85206</span>
               </li>
               <li className="flex items-center gap-4">
                 <Phone className="w-6 h-6 text-emerald-500 shrink-0" />
-                <a href="tel:+14808306200" className="hover:text-white transition-colors">(480) 830-6200</a>
+                <a href="tel:+14805032800" className="hover:text-white transition-colors">(480) 503-2800</a>
               </li>
               <li className="flex items-center gap-4">
                 <Mail className="w-6 h-6 text-emerald-500 shrink-0" />
-                <a href="mailto:info@farnsworthhvac.com" className="hover:text-white transition-colors">info@farnsworthhvac.com</a>
+                <a href="mailto:info@turbocoolingandheating.com" className="hover:text-white transition-colors">info@turbocoolingandheating.com</a>
               </li>
               <li className="flex items-start gap-4">
                 <Clock className="w-6 h-6 text-emerald-500 shrink-0 mt-1" />
@@ -86,7 +91,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
-          <p>&copy; {new Date().getFullYear()} Farnsworth Heating Cooling & Plumbing All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Turbo Cooling & Heating Inc. All rights reserved.</p>
           <p>Designed with ❤️ in Arizona.</p>
         </div>
       </div>

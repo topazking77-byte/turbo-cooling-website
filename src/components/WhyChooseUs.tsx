@@ -18,7 +18,7 @@ export default function WhyChooseUs() {
                     <div className="flex-1">
                         <span className="text-emerald-500 font-bold tracking-wider uppercase text-sm mb-2 block">Differentiators</span>
                         <h2 className="font-display font-bold text-4xl md:text-5xl text-slate-900 leading-tight mb-6">
-                            Why Choose Dependable Air LLC
+                            Why Choose Turbo Cooling & Heating Inc
                         </h2>
                         <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                             Whether you need emergency repair or routine maintenance, we continually strive to exceed expectations. We combine our use of the highest quality parts and equipment with our dedication to delivering exceptional, guaranteed service to provide you with top quality HVAC solutions.

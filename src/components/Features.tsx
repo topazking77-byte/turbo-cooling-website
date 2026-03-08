@@ -34,7 +34,7 @@ export default function Features() {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-display font-bold text-4xl md:text-5xl text-slate-900 mb-6">
-            Why Choose Dependable Air LLC?
+            Why Choose Turbo Cooling & Heating Inc?
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed">
             We combine premium service with transparent pricing to deliver the best HVAC experience in Arizona.

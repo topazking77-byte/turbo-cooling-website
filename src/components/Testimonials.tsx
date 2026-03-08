@@ -4,23 +4,23 @@ import { Star, Quote } from 'lucide-react';
 const testimonials = [
   {
     name: "Tara K.",
-    location: "Gilbert, AZ",
+    location: "Mesa, AZ",
     rating: 5,
-    text: "We were about to head out of town, it was the middle of summer, and our AC was on the fritz. Tim, from Dependable Air, was over in no time! He was polite & professional and did a great job! I always recommend this company to others.",
+    text: "We were about to head out of town, it was the middle of summer, and our AC was on the fritz. Turbo Cooling was over in no time! He was polite & professional and did a great job! I always recommend this company to others.",
     avatar: "https://i.pravatar.cc/150?img=1",
   },
   {
     name: "Steve J.",
     location: "Tempe, AZ",
     rating: 5,
-    text: "I own a property management business and needed to find a new HVAC company to service my rentals. I had heard great things about Dependable Air and decided to give them a try. I'm glad I did! They are honest, reliable and have the best prices. Unlike other HVAC companies I've worked with they only repair what needs to be repaired and give upfront prices. Best of all I know I'm covered by their warranties and they respect my tenants.",
+    text: "I own a property management business and needed to find a new HVAC company to service my rentals. I had heard great things about Turbo Cooling and decided to give them a try. I'm glad I did! They are honest, reliable and have the best prices. Unlike other HVAC companies I've worked with they only repair what needs to be repaired and give upfront prices. Best of all I know I'm covered by their warranties and they respect my tenants.",
     avatar: "https://i.pravatar.cc/150?img=11",
   },
   {
     name: "Tom W.",
     location: "Mesa, AZ",
     rating: 5,
-    text: "Great experience with Dependable Air. They showed up on time, figured out the problem fast, and charged a very fair price. I'll definitely be calling them again for my fall tune-up.",
+    text: "Great experience with Turbo Cooling & Heating. They showed up on time, figured out the problem fast, and charged a very fair price. I'll definitely be calling them again for my fall tune-up.",
     avatar: "https://i.pravatar.cc/150?img=5",
   },
 ];
@@ -37,7 +37,7 @@ export default function Testimonials() {
             Don't Just Take Our Word For It
           </h2>
           <p className="text-lg text-slate-600">
-            Join hundreds of satisfied homeowners across the Valley who trust Dependable Air LLC for their comfort.
+            Join hundreds of satisfied homeowners across the Valley who trust Turbo Cooling & Heating Inc for their comfort.
           </p>
         </div>
 
